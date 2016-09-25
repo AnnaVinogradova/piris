@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Webpage</title>
+</head>
+<body>
+<ul id="navigation">
+    {% for user in users %}
+        "{{ user.firstName }}"
+    {% endfor %}
+</ul>
+
+</body>
+</html>

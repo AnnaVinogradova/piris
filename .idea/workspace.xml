@@ -53,21 +53,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create_user.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="create_user.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/ClientModule/create_user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+            <state relative-caret-position="308">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list_of_users.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="list_of_users.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/php/ClientModule/list_of_users.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            <state relative-caret-position="323">
+              <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list_of_users.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/ClientModule/Templates/list_of_users.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -86,8 +96,8 @@
       <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/ClientModule/Classes/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="2737">
+              <caret line="161" column="5" selection-start-line="161" selection-start-column="5" selection-end-line="161" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -96,37 +106,39 @@
       <file leaf-file-name="UserHandler.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/ClientModule/Classes/UserHandler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="546">
+              <caret line="80" column="21" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
               <folding>
-                <marker date="1474789542307" expanded="true" signature="336:348" ph="INSERT INTO ${self::TABLE_NAME}... " />
-                <marker date="1474789542307" expanded="true" signature="336:510" ph="INSERT INTO self... " />
-                <marker date="1474789542307" expanded="true" signature="336:518" ph="INSERT INTO ${self::TABLE_NAME}... " />
-                <marker date="1474789542307" expanded="true" signature="336:559" ph="INSERT INTO ${self::TABLE_NAME}... " />
-                <marker date="1474789542307" expanded="true" signature="336:560" ph="INSERT INTO ${self::TABLE_NAME}... " />
-                <marker date="1474789542307" expanded="true" signature="336:587" ph="INSERT INTO ${self::TABLE_NAME}... " />
-                <marker date="1474789542307" expanded="true" signature="336:588" ph="INSERT INTO ${self::TABLE_NAME}... " />
-                <marker date="1474789542307" expanded="true" signature="336:660" ph="INSERT INTO ${self::TABLE_NAME}... " />
-                <marker date="1474789542307" expanded="true" signature="336:661" ph="INSERT INTO ${self::TABLE_NAME}... " />
-                <marker date="1474789542307" expanded="true" signature="336:662" ph="INSERT INTO ${self::TABLE_NAME}... " />
-                <marker date="1474789542307" expanded="true" signature="336:663" ph="INSERT INTO ${self::TABLE_NAME}... " />
-                <marker date="1474789542307" expanded="true" signature="336:695" ph="INSERT INTO ${self::TABLE_NAME}... " />
-                <marker date="1474789542307" expanded="true" signature="336:696" ph="INSERT INTO ${self::TABLE_NAME}... " />
-                <marker date="1474789542307" expanded="true" signature="336:697" ph="INSERT INTO ${self::TABLE_NAME}... " />
-                <marker date="1474789542307" expanded="true" signature="336:728" ph="INSERT INTO ${self::TABLE_NAME}... " />
-                <marker date="1474789542307" expanded="true" signature="336:729" ph="INSERT INTO ${self::TABLE_NAME}... " />
-                <marker date="1474789542307" expanded="true" signature="336:730" ph="INSERT INTO ${self::TABLE_NAME}... " />
-                <marker date="1474789542307" expanded="true" signature="336:731" ph="INSERT INTO ${self::TABLE_NAME}... " />
-                <marker date="1474789542307" expanded="true" signature="336:734" ph="INSERT INTO ${self::TABLE_NAME}... " />
-                <marker date="1474789542307" expanded="true" signature="336:841" ph="INSERT INTO ${self::TABLE_NAME}... " />
-                <marker date="1474789542307" expanded="true" signature="336:843" ph="INSERT INTO ${self::TABLE_NAME}... " />
-                <marker date="1474789542307" expanded="true" signature="336:887" ph="INSERT INTO ${self::TABLE_NAME}... " />
-                <marker date="1474789542307" expanded="true" signature="351:510" ph="SELECT actor... actor" />
-                <marker date="1474789542307" expanded="true" signature="1088:1599" ph="SELECT COUNT... ${self::TABLE_NAME}" />
-                <marker date="1474789542307" expanded="true" signature="1108:1599" ph="INSERT INTO ${self::TABLE_NAME}... " />
-                <marker date="1474789542307" expanded="true" signature="1839:1852" ph="SELECT * FRO... " />
-                <marker date="1474789542307" expanded="true" signature="1839:1853" ph="SELECT * FRO... ${self::TABLE_NAME}" />
-                <marker date="1474789542307" expanded="true" signature="1839:1873" ph="SELECT * FRO... ${self::TABLE_NAME}" />
+                <marker date="1474793254918" expanded="true" signature="336:348" ph="INSERT INTO ${self::TABLE_NAME}... " />
+                <marker date="1474793254918" expanded="true" signature="336:510" ph="INSERT INTO self... " />
+                <marker date="1474793254918" expanded="true" signature="336:518" ph="INSERT INTO ${self::TABLE_NAME}... " />
+                <marker date="1474793254918" expanded="true" signature="336:559" ph="INSERT INTO ${self::TABLE_NAME}... " />
+                <marker date="1474793254918" expanded="true" signature="336:560" ph="INSERT INTO ${self::TABLE_NAME}... " />
+                <marker date="1474793254918" expanded="true" signature="336:587" ph="INSERT INTO ${self::TABLE_NAME}... " />
+                <marker date="1474793254918" expanded="true" signature="336:588" ph="INSERT INTO ${self::TABLE_NAME}... " />
+                <marker date="1474793254918" expanded="true" signature="336:660" ph="INSERT INTO ${self::TABLE_NAME}... " />
+                <marker date="1474793254918" expanded="true" signature="336:661" ph="INSERT INTO ${self::TABLE_NAME}... " />
+                <marker date="1474793254918" expanded="true" signature="336:662" ph="INSERT INTO ${self::TABLE_NAME}... " />
+                <marker date="1474793254918" expanded="true" signature="336:663" ph="INSERT INTO ${self::TABLE_NAME}... " />
+                <marker date="1474793254918" expanded="true" signature="336:695" ph="INSERT INTO ${self::TABLE_NAME}... " />
+                <marker date="1474793254918" expanded="true" signature="336:696" ph="INSERT INTO ${self::TABLE_NAME}... " />
+                <marker date="1474793254918" expanded="true" signature="336:697" ph="INSERT INTO ${self::TABLE_NAME}... " />
+                <marker date="1474793254918" expanded="true" signature="336:728" ph="INSERT INTO ${self::TABLE_NAME}... " />
+                <marker date="1474793254918" expanded="true" signature="336:729" ph="INSERT INTO ${self::TABLE_NAME}... " />
+                <marker date="1474793254918" expanded="true" signature="336:730" ph="INSERT INTO ${self::TABLE_NAME}... " />
+                <marker date="1474793254918" expanded="true" signature="336:731" ph="INSERT INTO ${self::TABLE_NAME}... " />
+                <marker date="1474793254918" expanded="true" signature="336:734" ph="INSERT INTO ${self::TABLE_NAME}... " />
+                <marker date="1474793254918" expanded="true" signature="336:841" ph="INSERT INTO ${self::TABLE_NAME}... " />
+                <marker date="1474793254918" expanded="true" signature="336:843" ph="INSERT INTO ${self::TABLE_NAME}... " />
+                <marker date="1474793254918" expanded="true" signature="336:887" ph="INSERT INTO ${self::TABLE_NAME}... " />
+                <marker date="1474793254918" expanded="true" signature="351:510" ph="SELECT actor... actor" />
+                <marker date="1474793254918" expanded="true" signature="1088:1599" ph="SELECT COUNT... ${self::TABLE_NAME}" />
+                <marker date="1474793254918" expanded="true" signature="1108:1599" ph="INSERT INTO ${self::TABLE_NAME}... " />
+                <marker date="1474793254918" expanded="true" signature="1839:1852" ph="SELECT * FRO... " />
+                <marker date="1474793254918" expanded="true" signature="1839:1853" ph="SELECT * FRO... ${self::TABLE_NAME}" />
+                <marker date="1474793254918" expanded="true" signature="1839:1873" ph="SELECT * FRO... ${self::TABLE_NAME}" />
+                <marker date="1474793254918" expanded="true" signature="1839:1897" ph="SELECT * FRO... ${self::TABLE_NAME}" />
+                <marker date="1474793254918" expanded="true" signature="1839:1898" ph="SELECT * FRO... ${self::TABLE_NAME}" />
               </folding>
             </state>
           </provider>
@@ -149,12 +161,13 @@
         <option value="$PROJECT_DIR$/php/create_user.php" />
         <option value="$PROJECT_DIR$/php/ClientModule/Classes/User.php" />
         <option value="$PROJECT_DIR$/php/Database/DatabaseHandler.php" />
-        <option value="$PROJECT_DIR$/php/ClientModule/list_of_users.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/php/ClientModule/create_user.php" />
         <option value="$PROJECT_DIR$/js/registration_form.js" />
         <option value="$PROJECT_DIR$/php/ClientModule/Classes/UserHandler.php" />
+        <option value="$PROJECT_DIR$/php/ClientModule/Templates/list_of_users.html.twig" />
+        <option value="$PROJECT_DIR$/php/ClientModule/list_of_users.php" />
       </list>
     </option>
   </component>
@@ -227,10 +240,6 @@
               <option name="myItemId" value="php" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Database" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -260,11 +269,15 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="php" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
+              <option name="myItemId" value="ClientModule" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Templates" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -375,12 +388,12 @@
       <workItem from="1473773451952" duration="9982000" />
       <workItem from="1473792402143" duration="2683000" />
       <workItem from="1473843237580" duration="4925000" />
-      <workItem from="1474786107494" duration="3360000" />
+      <workItem from="1474786107494" duration="6206000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33865000" />
+    <option name="totallyTimeSpent" value="36711000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -482,34 +495,36 @@
         <state relative-caret-position="357">
           <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding>
-            <marker date="1474789542307" expanded="true" signature="336:348" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:510" ph="INSERT INTO self... " />
-            <marker date="1474789542307" expanded="true" signature="336:518" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:559" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:560" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:587" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:588" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:660" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:661" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:662" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:663" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:695" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:696" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:697" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:728" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:729" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:730" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:731" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:734" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:841" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:843" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:887" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="351:510" ph="SELECT actor... actor" />
-            <marker date="1474789542307" expanded="true" signature="1088:1599" ph="SELECT COUNT... ${self::TABLE_NAME}" />
-            <marker date="1474789542307" expanded="true" signature="1108:1599" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="1839:1852" ph="SELECT * FRO... " />
-            <marker date="1474789542307" expanded="true" signature="1839:1853" ph="SELECT * FRO... ${self::TABLE_NAME}" />
-            <marker date="1474789542307" expanded="true" signature="1839:1873" ph="SELECT * FRO... ${self::TABLE_NAME}" />
+            <marker date="1474793254918" expanded="true" signature="336:348" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:510" ph="INSERT INTO self... " />
+            <marker date="1474793254918" expanded="true" signature="336:518" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:559" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:560" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:587" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:588" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:660" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:661" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:662" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:663" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:695" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:696" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:697" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:728" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:729" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:730" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:731" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:734" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:841" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:843" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:887" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="351:510" ph="SELECT actor... actor" />
+            <marker date="1474793254918" expanded="true" signature="1088:1599" ph="SELECT COUNT... ${self::TABLE_NAME}" />
+            <marker date="1474793254918" expanded="true" signature="1108:1599" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="1839:1852" ph="SELECT * FRO... " />
+            <marker date="1474793254918" expanded="true" signature="1839:1853" ph="SELECT * FRO... ${self::TABLE_NAME}" />
+            <marker date="1474793254918" expanded="true" signature="1839:1873" ph="SELECT * FRO... ${self::TABLE_NAME}" />
+            <marker date="1474793254918" expanded="true" signature="1839:1897" ph="SELECT * FRO... ${self::TABLE_NAME}" />
+            <marker date="1474793254918" expanded="true" signature="1839:1898" ph="SELECT * FRO... ${self::TABLE_NAME}" />
           </folding>
         </state>
       </provider>
@@ -561,34 +576,36 @@
         <state relative-caret-position="425">
           <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding>
-            <marker date="1474789542307" expanded="true" signature="336:348" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:510" ph="INSERT INTO self... " />
-            <marker date="1474789542307" expanded="true" signature="336:518" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:559" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:560" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:587" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:588" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:660" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:661" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:662" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:663" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:695" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:696" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:697" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:728" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:729" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:730" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:731" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:734" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:841" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:843" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:887" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="351:510" ph="SELECT actor... actor" />
-            <marker date="1474789542307" expanded="true" signature="1088:1599" ph="SELECT COUNT... ${self::TABLE_NAME}" />
-            <marker date="1474789542307" expanded="true" signature="1108:1599" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="1839:1852" ph="SELECT * FRO... " />
-            <marker date="1474789542307" expanded="true" signature="1839:1853" ph="SELECT * FRO... ${self::TABLE_NAME}" />
-            <marker date="1474789542307" expanded="true" signature="1839:1873" ph="SELECT * FRO... ${self::TABLE_NAME}" />
+            <marker date="1474793254918" expanded="true" signature="336:348" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:510" ph="INSERT INTO self... " />
+            <marker date="1474793254918" expanded="true" signature="336:518" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:559" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:560" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:587" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:588" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:660" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:661" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:662" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:663" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:695" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:696" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:697" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:728" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:729" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:730" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:731" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:734" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:841" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:843" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:887" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="351:510" ph="SELECT actor... actor" />
+            <marker date="1474793254918" expanded="true" signature="1088:1599" ph="SELECT COUNT... ${self::TABLE_NAME}" />
+            <marker date="1474793254918" expanded="true" signature="1108:1599" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="1839:1852" ph="SELECT * FRO... " />
+            <marker date="1474793254918" expanded="true" signature="1839:1853" ph="SELECT * FRO... ${self::TABLE_NAME}" />
+            <marker date="1474793254918" expanded="true" signature="1839:1873" ph="SELECT * FRO... ${self::TABLE_NAME}" />
+            <marker date="1474793254918" expanded="true" signature="1839:1897" ph="SELECT * FRO... ${self::TABLE_NAME}" />
+            <marker date="1474793254918" expanded="true" signature="1839:1898" ph="SELECT * FRO... ${self::TABLE_NAME}" />
           </folding>
         </state>
       </provider>
@@ -629,26 +646,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/ClientModule/list_of_users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/ClientModule/Classes/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -663,51 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/Database/DatabaseHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/ClientModule/Classes/UserHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <marker date="1474789542307" expanded="true" signature="336:348" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:510" ph="INSERT INTO self... " />
-            <marker date="1474789542307" expanded="true" signature="336:518" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:559" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:560" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:587" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:588" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:660" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:661" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:662" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:663" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:695" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:696" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:697" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:728" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:729" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:730" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:731" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:734" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:841" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:843" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="336:887" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="351:510" ph="SELECT actor... actor" />
-            <marker date="1474789542307" expanded="true" signature="1088:1599" ph="SELECT COUNT... ${self::TABLE_NAME}" />
-            <marker date="1474789542307" expanded="true" signature="1108:1599" ph="INSERT INTO ${self::TABLE_NAME}... " />
-            <marker date="1474789542307" expanded="true" signature="1839:1852" ph="SELECT * FRO... " />
-            <marker date="1474789542307" expanded="true" signature="1839:1853" ph="SELECT * FRO... ${self::TABLE_NAME}" />
-            <marker date="1474789542307" expanded="true" signature="1839:1873" ph="SELECT * FRO... ${self::TABLE_NAME}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/registration_form.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="521">
@@ -716,10 +672,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/php/Database/DatabaseHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/ClientModule/Classes/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2737">
+          <caret line="161" column="5" selection-start-line="161" selection-start-column="5" selection-end-line="161" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/ClientModule/create_user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+        <state relative-caret-position="308">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/ClientModule/Classes/UserHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="80" column="21" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
+          <folding>
+            <marker date="1474793254918" expanded="true" signature="336:348" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:510" ph="INSERT INTO self... " />
+            <marker date="1474793254918" expanded="true" signature="336:518" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:559" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:560" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:587" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:588" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:660" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:661" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:662" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:663" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:695" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:696" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:697" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:728" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:729" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:730" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:731" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:734" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:841" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:843" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="336:887" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="351:510" ph="SELECT actor... actor" />
+            <marker date="1474793254918" expanded="true" signature="1088:1599" ph="SELECT COUNT... ${self::TABLE_NAME}" />
+            <marker date="1474793254918" expanded="true" signature="1108:1599" ph="INSERT INTO ${self::TABLE_NAME}... " />
+            <marker date="1474793254918" expanded="true" signature="1839:1852" ph="SELECT * FRO... " />
+            <marker date="1474793254918" expanded="true" signature="1839:1853" ph="SELECT * FRO... ${self::TABLE_NAME}" />
+            <marker date="1474793254918" expanded="true" signature="1839:1873" ph="SELECT * FRO... ${self::TABLE_NAME}" />
+            <marker date="1474793254918" expanded="true" signature="1839:1897" ph="SELECT * FRO... ${self::TABLE_NAME}" />
+            <marker date="1474793254918" expanded="true" signature="1839:1898" ph="SELECT * FRO... ${self::TABLE_NAME}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/ClientModule/Templates/list_of_users.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/ClientModule/list_of_users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
           <folding />
         </state>
       </provider>

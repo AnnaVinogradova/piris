@@ -54,14 +54,30 @@ class UserHandler
 
     public function findAll()
     {
-        $sql = "SELECT * FROM " . self::TABLE_NAME;
+        $sql = "SELECT * FROM " . self::TABLE_NAME. " ORDER BY `last_name`";
         $result = $this->db_connection->query($sql);
 
         $users = Array();
         while ($row = $result->fetch_assoc()) {
-            $users[] = $row;
+            $users[] = $this->getUserFromArray($row);
         }
 
         return $users;
+    }
+
+    private function getUserFromArray($arrayOfUserData)
+    {
+        $user = new User();
+        $user->setFirstName($arrayOfUserData["first_name"]);
+        $user->setLastName($arrayOfUserData['last_name']);
+        $user->setPatronymic($arrayOfUserData['patronymic']);
+        $user->setBirth($arrayOfUserData['birth']);
+        $user->setPassportSeries($arrayOfUserData['passport_series']);
+        $user->setPassportNumber($arrayOfUserData['passport_number']);
+        $user->setPassportFrom($arrayOfUserData['passport_from']);
+        $user->setPassportDate($arrayOfUserData['passport_date']);
+        $user->setPlaceOfBirth($arrayOfUserData['place_of_birth']);
+
+        return $user;
     }
 }
