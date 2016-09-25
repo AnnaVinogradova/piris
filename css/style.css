@@ -62,6 +62,18 @@ ul.dropdown-menu {
 
 .warn-message {
     color: #f00;
-    text-shadow: 1px 0px 1px #f00;
+    text-shadow: 1px 0 1px #f00;
     margin-left:10px;
 }
+
+.user-list li {
+    display: block;
+    background: #fff;
+    padding: 20px;
+    margin: 5px;
+    font-style: italic;
+}
+
+    .user-list li h4 {
+        font-weight: bold;
+    }

@@ -11,12 +11,8 @@ require_once("Classes/UserHandler.php");
 require_once("../Database/DatabaseHandler.php");
 require_once('../../lib/vendor/autoload.php');
 
-Twig_Autoloader::register();
-
 $loader = new Twig_Loader_Filesystem('Templates/');
-$twig = new Twig_Environment($loader, array(
-    'cache' => '../../lib/vendor/cache',
-));
+$twig = new Twig_Environment($loader, array('debug' => true));
 
 $handler = new UserHandler(DatabaseHandler::getConnection());
 $users = $handler->findAll();

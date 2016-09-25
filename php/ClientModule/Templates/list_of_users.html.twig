@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My Webpage</title>
-</head>
-<body>
-<ul id="navigation">
-    {% for user in users %}
-        "{{ user.firstName }}"
-    {% endfor %}
-</ul>
+{% extends "layout.html.twig" %}
 
-</body>
-</html>
+{% block content %}
+    <ul id="content" class="user-list">
+        {% for user in users %}
+            <li>
+                <h4>Name: {{ user.lastName }} {{ user.firstName }} {{ user.patronymic }}</h4>
+                Date of birth: {{ user.birth }}<br>
+                Place of birth: {{ user.placeOfBirth }}<br>
+                Passport: {{ user.passportSeries }}{{ user.passportNumber }}, {{ user.passportFrom }}, date: {{ user.passportDate }}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

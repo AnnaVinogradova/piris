@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>PiRIS</title>
+        <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                            <span class="sr-only">Навигация</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <header class="navbar-brand">
+                            <span>PiRIS - Bank System</span>
+                        </header>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                        <ul class="row nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Client Module<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../../index.html">Create client</a></li>
+                                    <li><a href="list_of_users.php">Show clients</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            {% block content %}{% endblock %}
+            <footer class="row">&copy; Vinogradova Anna, 2016</footer>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
