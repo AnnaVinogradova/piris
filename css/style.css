@@ -1,5 +1,24 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     background: #FBFBE9;
+    margin-bottom: 100px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-top: 30px;
+    height: 100px;
+    background: #000;
+    color: #fff;
 }
 
 nav {
@@ -46,7 +65,23 @@ footer {
     background: #222222 !important;
 }
 
+.delete-button {
+    background: rgba(0,0,0,0);
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    font-weight: bold;
+    border: 2px solid #f00;
+    border-radius: 50%;
+    color: #f00;
+    float: right;
+}
+
 ul.dropdown-menu {
+    background: #222222 !important;
+}
+
+ul.dropdown-menu a:hover {
     background: #222222 !important;
 }
 

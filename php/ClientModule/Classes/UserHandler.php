@@ -26,6 +26,18 @@ class UserHandler
         $this->db_connection->query($sql);
     }
 
+    public function updateUser($id, $user)
+    {
+
+    }
+
+    public function deleteUser($id)
+    {
+        $sql = "DELETE FROM " . self::TABLE_NAME . " WHERE id = {$id}";
+
+        $this->db_connection->query($sql);
+    }
+
     public function getUserByCredentials($login, $password)
     {
 
@@ -68,6 +80,7 @@ class UserHandler
     private function getUserFromArray($arrayOfUserData)
     {
         $user = new User();
+        $user->setId($arrayOfUserData["id"]);
         $user->setFirstName($arrayOfUserData["first_name"]);
         $user->setLastName($arrayOfUserData['last_name']);
         $user->setPatronymic($arrayOfUserData['patronymic']);

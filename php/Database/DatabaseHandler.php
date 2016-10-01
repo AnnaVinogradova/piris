@@ -9,7 +9,7 @@
 class DatabaseHandler
 {
     const HOST_NAME = 'localhost';
-    const USER_NAME = 'admin';
+    const USER_NAME = 'root';
     const DB_NAME = 'piris';
     const DB_PASSWORD = '123456';
 

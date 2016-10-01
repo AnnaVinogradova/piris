@@ -8,6 +8,7 @@
  */
 class User
 {
+    private $id;
     private $first_name;
     private $last_name;
     private $patronymic;
@@ -26,6 +27,16 @@ class User
     private function checkEmail()
     {
 
+    }
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function setId($id)
+    {
+        $this->id = $id;
     }
 
     /**

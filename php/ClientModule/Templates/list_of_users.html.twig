@@ -5,10 +5,17 @@
         {% for user in users %}
             <li>
                 <h4>Name: {{ user.lastName }} {{ user.firstName }} {{ user.patronymic }}</h4>
+                <button class="delete-button" value="{{ user.id }}">&times;</button>
                 Date of birth: {{ user.birth }}<br>
                 Place of birth: {{ user.placeOfBirth }}<br>
                 Passport: {{ user.passportSeries }}{{ user.passportNumber }}, {{ user.passportFrom }}, date: {{ user.passportDate }}
             </li>
         {% endfor %}
     </ul>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../js/delete_user.js"></script>
+    <script>
+        $('.delete-button').on('click', deleteUser);
+    </script>
 {% endblock %}
