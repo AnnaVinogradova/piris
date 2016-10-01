@@ -1,0 +1,96 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-offset-2 col-md-7">
+            <form id="content" name="user_form" action="update_user.php" method="post">
+                <h3>Update user</h3>
+                <div>
+                    <input type="text" name="first_name" placeholder="First name" class="required form-control" value="{{ user.firstName }}" required>*
+                </div>
+                <div>
+                    <input type="text" name="last_name" placeholder="Last name" class="required form-control" value="{{ user.lastName }}" required>*
+                </div>
+                <div>
+                    <input type="text" name="patronymic" placeholder="Patronymic" class="required form-control" value="{{ user.patronymic }}" required>*
+                </div>
+                <div>
+                    <input type="date" name="birth" placeholder="Date of Birth" class="required form-control" value="{{ user.birth }}" required>*
+                </div>
+                <div>
+                    <input type="text" name="passport_series" placeholder="Passport (Series)" class="required form-control" value="{{ user.passportSeries }}" required>*
+                </div>
+                <div>
+                    <input type="text" name="passport_number" placeholder="Passport (Number)" class="required form-control" value="{{ user.passportNumber }}" required>*
+                </div>
+                <div>
+                    <input type="text" name="passport_from" placeholder="Passport (From)" class="required form-control" value="{{ user.passportFrom }}" required>*
+                </div>
+                <div>
+                    <input type="date" name="passport_date" placeholder="Passport (Date)" class="required form-control" value="{{ user.passportDate }}" required>*
+                </div>
+                <div>
+                    <input type="text" name="id" placeholder="ID" class="required form-control">*
+                </div>
+                <div>
+                    <input type="text" name="place_of_birth" placeholder="Place of Birth" class="required form-control" required>*
+                </div>
+
+                <div class="form-group">
+                    <label for="city-list">City</label>
+                    <select name="" id="city-list">
+                        <option value="">Minsk</option>
+                        <option value="">Gomel</option>
+                        <option value="">Grodno</option>
+                        <option value="">Brest</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="text" name="" placeholder="Address" class="form-control required" required>*
+                </div>
+                <input type="text" name="" placeholder="Phone number" class="form-control">
+                <input type="text" name="" placeholder="Phone number (Mobile)" class="form-control">
+                <input type="text" name="" placeholder="Email" class="form-control">
+                <input type="text" name="" placeholder="Place of work" class="form-control">
+                <input type="text" name="" placeholder="Position" class="form-control">
+                <input type="text" name="" placeholder="Marital status" class=" form-control" >*
+                <div class="form-group">
+                    <label for="nationality-list">Nationality</label>
+                    <select name="" id="nationality-list">
+                        <option value="">Belarus</option>
+                        <option value="">Foreigner</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="disability-list">Disability</label>
+                    <select name="" id="disability-list">
+                        <option value="">No</option>
+                        <option value="">I</option>
+                        <option value="">II</option>
+                        <option value="">III</option>
+                    </select>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" name="pensioner" class="form-check-input">
+                        Pensioner
+                    </label>
+                </div>
+                <input type="text" name="" placeholder="Income" class="form-control">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" name="military" class="form-check-input">
+                        Liable for military service
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary" value="{{ user.id }}">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="../../js/update_form.js"></script>
+<script>
+    document.user_form.addEventListener('submit', checkForm);
+</script>
+
+{% endblock %}

@@ -26,9 +26,15 @@ class UserHandler
         $this->db_connection->query($sql);
     }
 
-    public function updateUser($id, $user)
+    public function updateUser($user)
     {
+        $sql = "UPDATE " . self::TABLE_NAME . " SET first_name='{$user->getFirstName()}', 
+                last_name='{$user->getLastName()}', patronymic='{$user->getPatronymic()}', birth='
+                {$user->getBirth()}' AND passport_series='{$user->getPassportSeries()}' AND passport_number='
+                {$user->getPassportNumber()}', passport_from='{$user->getPassportFrom()}', passport_date='
+                {$user->getPassportDate()}', place_of_birth='{$user->getPlaceOfBirth()}' WHERE id={$user->getId()}";
 
+        $this->db_connection->query($sql);
     }
 
     public function deleteUser($id)
@@ -45,7 +51,11 @@ class UserHandler
 
     public function getUserById($id)
     {
+        $sql = "SELECT * FROM " . self::TABLE_NAME . " WHERE id = {$id}";
 
+        $result = $this->db_connection->query($sql);
+        $user = $this->getUserFromArray($result->fetch_assoc());
+        return $user;
     }
 
     public function checkUserIsExists($user)

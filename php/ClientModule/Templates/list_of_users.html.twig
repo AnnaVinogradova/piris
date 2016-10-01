@@ -6,6 +6,7 @@
             <li>
                 <h4>Name: {{ user.lastName }} {{ user.firstName }} {{ user.patronymic }}</h4>
                 <button class="delete-button" value="{{ user.id }}">&times;</button>
+                <a href="update_form.php?id={{ user.id }}">Edit</a><br>
                 Date of birth: {{ user.birth }}<br>
                 Place of birth: {{ user.placeOfBirth }}<br>
                 Passport: {{ user.passportSeries }}{{ user.passportNumber }}, {{ user.passportFrom }}, date: {{ user.passportDate }}
