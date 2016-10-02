@@ -72,11 +72,7 @@
 
                     <div class="form-group">
                         <label for="city-list">City</label>
-                        <select name="" id="city-list">
-                            <option value="">Minsk</option>
-                            <option value="">Gomel</option>
-                            <option value="">Grodno</option>
-                            <option value="">Brest</option>
+                        <select name="city" id="city-list">
                         </select>
                     </div>
                     <div>
@@ -124,12 +120,15 @@
         <footer class="row">&copy; Vinogradova Anna, 2016</footer>
     </div>
     <script src="js/registration_form.js"></script>
-    <script>
-        document.user_form.addEventListener('submit', checkForm);
-    </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        document.user_form.addEventListener('submit', checkForm);
+        $.get("php/ClientModule/list_of_cities.php", function(data){
+            $('#city-list').append(data);
+        });
+    </script>
 </body>
 </html>

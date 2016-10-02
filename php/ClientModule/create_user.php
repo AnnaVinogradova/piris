@@ -21,6 +21,7 @@ $user->setPassportFrom($_POST['passport_from']);
 $user->setPassportDate($_POST['passport_date']);
 //$id = $_POST['id'];
 $user->setPlaceOfBirth($_POST['place_of_birth']);
+$user->setCity($_POST["city"]);
 
 if($user->checkIsValid()){
     $handler = new UserHandler(DatabaseHandler::getConnection());

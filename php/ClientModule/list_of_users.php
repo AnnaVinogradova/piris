@@ -8,6 +8,8 @@
 
 require_once("Classes/User.php");
 require_once("Classes/UserHandler.php");
+require_once("Classes/City.php");
+require_once("Classes/CityHandler.php");
 require_once("../Database/DatabaseHandler.php");
 require_once('../../lib/vendor/autoload.php');
 
@@ -16,6 +18,11 @@ $twig = new Twig_Environment($loader, array('debug' => true));
 
 $handler = new UserHandler(DatabaseHandler::getConnection());
 $users = $handler->findAll();
+
+$city_handler = new CityHandler(DatabaseHandler::getConnection());
+foreach ($users as $user){
+    $user->city_name = $city_handler->getCityNameById($user->getCity());
+}
 
 $template = $twig->loadTemplate('list_of_users.html.twig');
 echo $template->render(array('users' => $users));

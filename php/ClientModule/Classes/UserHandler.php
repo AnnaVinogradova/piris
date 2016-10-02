@@ -19,10 +19,12 @@ class UserHandler
     public function createUser($user)
     {
         $sql = "INSERT INTO ". self::TABLE_NAME ."(first_name, last_name, patronymic, birth, passport_series, 
-                passport_number, passport_from, passport_date, place_of_birth) VALUES 
-                ('".$user->getFirstName()."','". $user->getLastName()."', '".$user->getPatronymic()."','" .
-                $user->getBirth()."','". $user->getPassportSeries()."',". $user->getPassportNumber() .",'".
-                $user->getPassportFrom()."', '". $user->getPassportDate()."','". $user->getPlaceOfBirth()."')";
+                passport_number, passport_from, passport_date, place_of_birth, city_id) VALUES 
+                ('{$user->getFirstName()}','{$user->getLastName()}', '{$user->getPatronymic()}','{
+                $user->getBirth()}','{$user->getPassportSeries()}', {$user->getPassportNumber()},
+                '{$user->getPassportFrom()}', '{$user->getPassportDate()}','{$user->getPlaceOfBirth()}', 
+                {$user->getCity()})";
+
         $this->db_connection->query($sql);
     }
 
@@ -30,8 +32,8 @@ class UserHandler
     {
         $sql = "UPDATE " . self::TABLE_NAME . " SET first_name='{$user->getFirstName()}', 
                 last_name='{$user->getLastName()}', patronymic='{$user->getPatronymic()}', birth='
-                {$user->getBirth()}' AND passport_series='{$user->getPassportSeries()}' AND passport_number='
-                {$user->getPassportNumber()}', passport_from='{$user->getPassportFrom()}', passport_date='
+                {$user->getBirth()}', passport_series='{$user->getPassportSeries()}', passport_number=
+                {$user->getPassportNumber()}, passport_from='{$user->getPassportFrom()}', passport_date='
                 {$user->getPassportDate()}', place_of_birth='{$user->getPlaceOfBirth()}' WHERE id={$user->getId()}";
 
         $this->db_connection->query($sql);
@@ -100,6 +102,7 @@ class UserHandler
         $user->setPassportFrom($arrayOfUserData['passport_from']);
         $user->setPassportDate($arrayOfUserData['passport_date']);
         $user->setPlaceOfBirth($arrayOfUserData['place_of_birth']);
+        $user->setCity($arrayOfUserData['city_id']);
 
         return $user;
     }

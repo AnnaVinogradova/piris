@@ -18,6 +18,7 @@ class User
     private $passport_from;
     private $passport_date;
     private $place_of_birth;
+    private $city;
 
     public function checkIsValid()
     {
@@ -181,5 +182,21 @@ class User
     public function setPlaceOfBirth($place_of_birth)
     {
         $this->place_of_birth = $place_of_birth;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCity()
+    {
+        return $this->city;
+    }
+
+    /**
+     * @param mixed $city
+     */
+    public function setCity($city)
+    {
+        $this->city = $city;
     }
 }

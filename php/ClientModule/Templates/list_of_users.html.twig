@@ -9,7 +9,8 @@
                 <a href="update_form.php?id={{ user.id }}">Edit</a><br>
                 Date of birth: {{ user.birth }}<br>
                 Place of birth: {{ user.placeOfBirth }}<br>
-                Passport: {{ user.passportSeries }}{{ user.passportNumber }}, {{ user.passportFrom }}, date: {{ user.passportDate }}
+                Passport: {{ user.passportSeries }}{{ user.passportNumber }}, {{ user.passportFrom }}, date: {{ user.passportDate }}<br>
+                City: {{ user.city_name }}
             </li>
         {% endfor %}
     </ul>
