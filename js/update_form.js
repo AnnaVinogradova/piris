@@ -38,7 +38,8 @@ function checkForm(e){
                 passport_number: document.user_form.passport_number.value,
                 passport_from: document.user_form.passport_from.value,
                 passport_date: document.user_form.passport_date.value,
-                place_of_birth: document.user_form.place_of_birth.value
+                place_of_birth: document.user_form.place_of_birth.value,
+                city: document.user_form.city.value
             },
             function (data) {
                 if(data){

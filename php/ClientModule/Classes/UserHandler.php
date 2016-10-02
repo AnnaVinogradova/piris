@@ -34,7 +34,7 @@ class UserHandler
                 last_name='{$user->getLastName()}', patronymic='{$user->getPatronymic()}', birth='
                 {$user->getBirth()}', passport_series='{$user->getPassportSeries()}', passport_number=
                 {$user->getPassportNumber()}, passport_from='{$user->getPassportFrom()}', passport_date='
-                {$user->getPassportDate()}', place_of_birth='{$user->getPlaceOfBirth()}' WHERE id={$user->getId()}";
+                {$user->getPassportDate()}', place_of_birth='{$user->getPlaceOfBirth()}', city_id={$user->getCity()} WHERE id={$user->getId()}";
 
         $this->db_connection->query($sql);
     }

@@ -13,7 +13,17 @@ require_once("../Database/DatabaseHandler.php");
 $handler = new CityHandler(DatabaseHandler::getConnection());
 $cities = $handler->findAll();
 
+$id = 0;
+if(isset($_GET['id'])){
+    $id = $_GET['id'];
+}
+
 foreach ($cities as $city){
-    echo "<option value=\"{$city->getId()}\">{$city->getName()}</option>";
+    if($id == $city->getId()){
+        echo "<option value=\"{$city->getId()}\" selected>{$city->getName()}</option>";
+    } else {
+        echo "<option value=\"{$city->getId()}\">{$city->getName()}</option>";
+    }
+
 }
 

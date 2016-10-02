@@ -29,7 +29,8 @@ class CityHandler
         return $cities;
     }
 
-    public function getCityNameById($id){
+    public function getCityNameById($id)
+    {
         $sql = "SELECT * FROM " . self::TABLE_NAME . " WHERE id = {$id}";
 
         $result = $this->db_connection->query($sql);
