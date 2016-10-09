@@ -83,11 +83,19 @@ class UserHandler
 
     public function checkUniqueValues($user)
     {
+        $id_valid = true;
+
         if(!$this->checkPassportNumber($user->getId(), $user->getPassportNumber())){
-            echo "User with this passport number has already exist";
-            return false;
+            echo "User with this passport number has already exist<br>";
+            $is_valid = false;
         }
-        return true;
+
+        if(!$this->checkPrivateNumber($user->getId(), $user->getPrivateNumber())){
+            echo "User with this private number has already exist";
+            $is_valid = false;
+        }
+
+        return $is_valid;
     }
 
     public function findAll()
@@ -139,6 +147,22 @@ class UserHandler
             $sql = "SELECT COUNT(*) FROM ". self::TABLE_NAME ." WHERE id <>'{$id}' AND passport_number={$number}";
         } else {
             $sql = "SELECT COUNT(*) FROM ". self::TABLE_NAME ." WHERE passport_number={$number}";
+        }
+
+        $result = $this->db_connection->query($sql);
+        $count = $result->fetch_row();
+        if($count[0] > 0 ){
+            return false;
+        }
+        return true;
+    }
+
+    private function checkPrivateNumber($id, $number)
+    {
+        if($id != null){
+            $sql = "SELECT COUNT(*) FROM ". self::TABLE_NAME ." WHERE id <>'{$id}' AND private_number={$number}";
+        } else {
+            $sql = "SELECT COUNT(*) FROM ". self::TABLE_NAME ." WHERE private_number={$number}";
         }
 
         $result = $this->db_connection->query($sql);

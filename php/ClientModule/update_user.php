@@ -34,17 +34,6 @@ $user->setMaritalStatus($_POST['marital_status']);
 $user->setDisability($_POST['disability']);
 $user->setPensioner($_POST['pensioner']);
 $user->setMilitary($_POST['military']);
-$user->setIncome($_POST['income']);$user->setPrivateNumber($_POST['private_number']);
-$user->setAddress($_POST['address']);
-$user->setHomePhone($_POST['phone_number']);
-$user->setMobilePhone($_POST['mobile_number']);
-$user->setEmail($_POST['email']);
-$user->setPlaceOfWork($_POST['place_of_work']);
-$user->setPosition($_POST['position']);
-$user->setMaritalStatus($_POST['marital_status']);
-$user->setDisability($_POST['disability']);
-$user->setPensioner($_POST['pensioner']);
-$user->setMilitary($_POST['military']);
 $user->setIncome($_POST['income']);
 
 if($user->checkIsValid()){
