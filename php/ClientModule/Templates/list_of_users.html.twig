@@ -11,7 +11,20 @@
                         Place of birth: {{ user.placeOfBirth }}<br>
                         Passport: {{ user.passportSeries }}{{ user.passportNumber }}, {{ user.passportFrom }}, date: {{ user.passportDate }}<br>
                         City: {{ user.city_name }}<br>
-                        <a class="btn btn-primary" href="update_form.php?id={{ user.id }}">Edit</a>
+                        Private number: {{ user.privateNumber }}<br>
+                        Address: {{ user.address }}<br>
+                        Home phone: {{ user.homePhone }}<br>
+                        Mobile phone: {{ user.mobilePhone }}<br>
+                        Email: {{ user.email }}<br>
+                        Place of work: {{ user.placeOfWork }}<br>
+                        Position: {{ user.position }}<br>
+                        Marital status: {{ user.maritalStatus }}<br>
+                        Disability: {{ user.disability }}<br>
+                        Pensioner: {% if user.pensioner %}yes {% else %}no{% endif %}<br>
+                        Income: {{ user.income }}<br>
+                        Military: {% if user.military %}yes {% else %}no{% endif %}<br>
+
+                        <a class="btn btn-primary" href="update_form.php?id={{ user.id }}">Edit User</a>
                     </div>
             </div>
         {% endfor %}

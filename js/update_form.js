@@ -9,6 +9,7 @@ function checkForm(e){
         e.preventDefault();
     } else {
         e.preventDefault();
+        $('.panel-danger').remove();
         $.post(
             "update_user.php",
             {
@@ -33,15 +34,19 @@ function checkForm(e){
                 marital_status: document.user_form.marital_status.value,
                 nationality: document.user_form.nationality.value,
                 disability: document.user_form.disability.value,
-                pensioner: document.user_form.pensioner.value,
-                military: document.user_form.military.value,
+                pensioner: document.user_form.pensioner.checked,
+                military: document.user_form.military.checked,
                 income: document.user_form.income.value
             },
             function (data) {
-                if(data){
-                    alert(data);
+                if(data == ''){
+                    document.location.href = "/PiRIS/php/ClientModule/list_of_users.php";
                 } else {
-                    alert(data);
+                    var errorPanel = '<div class="panel panel-danger">' +
+                        '<div class="panel-body">' +
+                        data +
+                        '</div></div>';
+                    $('#errorPanel').prepend(errorPanel);
                 }
             }
         )

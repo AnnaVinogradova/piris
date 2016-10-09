@@ -27,8 +27,10 @@ $user->setCity($_POST['city']);
 
 if($user->checkIsValid()){
     $handler = new UserHandler(DatabaseHandler::getConnection());
-    $handler->updateUser($user);
-    echo true;
+    if($handler->checkUniqueValues($user)){
+        $handler->updateUser($user);
+        echo '';
+    }
 } else {
-    echo false;
+    echo "Something was wrong";
 }

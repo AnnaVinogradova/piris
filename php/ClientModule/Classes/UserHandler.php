@@ -19,11 +19,16 @@ class UserHandler
     public function createUser($user)
     {
         $sql = "INSERT INTO ". self::TABLE_NAME ."(first_name, last_name, patronymic, birth, passport_series, 
-                passport_number, passport_from, passport_date, place_of_birth, city_id) VALUES 
+                passport_number, passport_from, passport_date, place_of_birth, city_id, private_number, address, 
+                phone_number, mobile_phone, email, place_of_work, position, marital_status, disability,
+                pensioner, income, military) VALUES 
                 ('{$user->getFirstName()}','{$user->getLastName()}', '{$user->getPatronymic()}',
                 '{$user->getBirth()}','{$user->getPassportSeries()}', {$user->getPassportNumber()},
                 '{$user->getPassportFrom()}', '{$user->getPassportDate()}','{$user->getPlaceOfBirth()}', 
-                {$user->getCity()})";
+                {$user->getCity()}, '{$user->getPrivateNumber()}', '{$user->getAddress()}', '{$user->getHomePhone()}',
+                '{$user->getMobilePhone()}', '{$user->getEmail()}', '{$user->getPlaceOfWork()}', '{$user->getPosition()}',
+                '{$user->getMaritalStatus()}', '{$user->getDisability()}', {$user->getPensioner()}, '{$user->getIncome()}',
+                {$user->getMilitary()})";
 
         $this->db_connection->query($sql);
     }
@@ -34,7 +39,12 @@ class UserHandler
                 last_name='{$user->getLastName()}', patronymic='{$user->getPatronymic()}', birth='
                 {$user->getBirth()}', passport_series='{$user->getPassportSeries()}', passport_number=
                 {$user->getPassportNumber()}, passport_from='{$user->getPassportFrom()}', passport_date='
-                {$user->getPassportDate()}', place_of_birth='{$user->getPlaceOfBirth()}', city_id={$user->getCity()} WHERE id={$user->getId()}";
+                {$user->getPassportDate()}', place_of_birth='{$user->getPlaceOfBirth()}', city_id={$user->getCity()},
+                private_number='{$user->getPrivateNumber()}', address='{$user->getAddress()}', phone_number='{$user->getHomePhone()}',
+                mobile_phone='{$user->getMobilePhone()}', email='{$user->getEmail()}', place_of_work='{$user->getPlaceOfWork()}',
+                position='{$user->getPosition()}', marital_status='{$user->getMaritalStatus()}', disability = '{$user->getDisability()}', 
+                pensioner = {$user->getPensioner()}, income='{$user->getIncome()}', military = {$user->getMilitary()}
+                WHERE id={$user->getId()}";
 
         $this->db_connection->query($sql);
     }
@@ -44,11 +54,6 @@ class UserHandler
         $sql = "DELETE FROM " . self::TABLE_NAME . " WHERE id = {$id}";
 
         $this->db_connection->query($sql);
-    }
-
-    public function getUserByCredentials($login, $password)
-    {
-
     }
 
     public function getUserById($id)
@@ -112,6 +117,18 @@ class UserHandler
         $user->setPassportDate($arrayOfUserData['passport_date']);
         $user->setPlaceOfBirth($arrayOfUserData['place_of_birth']);
         $user->setCity($arrayOfUserData['city_id']);
+        $user->setPrivateNumber($arrayOfUserData['private_number']);
+        $user->setAddress($arrayOfUserData['address']);
+        $user->setHomePhone($arrayOfUserData['phone_number']);
+        $user->setMobilePhone($arrayOfUserData['mobile_phone']);
+        $user->setEmail($arrayOfUserData['email']);
+        $user->setPlaceOfWork($arrayOfUserData['place_of_work']);
+        $user->setPosition($arrayOfUserData['position']);
+        $user->setMaritalStatus($arrayOfUserData['marital_status']);
+        $user->setDisability($arrayOfUserData['disability']);
+        $user->setPensioner($arrayOfUserData['pensioner']);
+        $user->setIncome($arrayOfUserData['income']);
+        $user->setMilitary($arrayOfUserData['military']);
 
         return $user;
     }

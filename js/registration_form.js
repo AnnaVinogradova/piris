@@ -33,8 +33,8 @@ function checkForm(e){
                 marital_status: document.user_form.marital_status.value,
                 nationality: document.user_form.nationality.value,
                 disability: document.user_form.disability.value,
-                pensioner: document.user_form.pensioner.value,
-                military: document.user_form.military.value,
+                pensioner: document.user_form.pensioner.checked,
+                military: document.user_form.military.checked,
                 income: document.user_form.income.value
             },
             function (data) {
