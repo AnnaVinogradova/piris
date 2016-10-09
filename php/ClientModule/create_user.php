@@ -11,6 +11,7 @@ require_once("../Database/DatabaseHandler.php");
 
 $user = new User();
 
+$user->setId(null);
 $user->setFirstName($_POST["first_name"]);
 $user->setLastName($_POST['last_name']);
 $user->setPatronymic($_POST['patronymic']);
@@ -26,10 +27,12 @@ $user->setCity($_POST["city"]);
 if($user->checkIsValid()){
     $handler = new UserHandler(DatabaseHandler::getConnection());
     if(!$handler->checkUserIsExists($user)){
-        $handler->createUser($user);
-        echo true;
+        if($handler->checkUniqueValues($user)){
+            $handler->createUser($user);
+            echo '';
+        }
     } else {
-        echo false;
+        echo "This user has already exist";
     }
 } else {
     echo false;

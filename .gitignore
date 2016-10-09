@@ -1,2 +1,3 @@
 lib/vendor
 .idea/
+lib/jquery-3.1.0.min.js

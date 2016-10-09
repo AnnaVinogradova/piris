@@ -27,7 +27,7 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Client Module<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="php/ClientModule/create_user.php">Create client</a></li>
+                                <li><a href="#">Create client</a></li>
                                 <li><a href="php/ClientModule/list_of_users.php">Show clients</a></li>
                             </ul>
                         </li>
@@ -39,32 +39,33 @@
             <div class="col-md-offset-2 col-md-7">
                 <form id="content" name="user_form" action="php/ClientModule/create_user.php" method="post">
                     <h3>Registration</h3>
+                    <div id="errorPanel"></div>
                     <div>
-                        <input type="text" name="first_name" placeholder="First name" class="required form-control" required>*
+                        <input type="text" id="firstName" name="first_name" placeholder="First name" class="required form-control" required>*
                     </div>
                     <div>
-                        <input type="text" name="last_name" placeholder="Last name" class="required form-control" required>*
+                        <input type="text" id="lastName" name="last_name" placeholder="Last name" class="required form-control" required>*
                     </div>
                     <div>
-                        <input type="text" name="patronymic" placeholder="Patronymic" class="required form-control" required>*
+                        <input type="text" id="patronymic" name="patronymic" placeholder="Patronymic" class="required form-control" required>*
                     </div>
                     <div>
-                        <input type="date" name="birth" placeholder="Date of Birth" class="required form-control" required>*
+                        <input type="date" id="dateOfBirth" name="birth" placeholder="Date of Birth (YYYY-MM-DD)" class="required form-control" required>*
                     </div>
                     <div>
                         <input type="text" name="passport_series" placeholder="Passport (Series)" class="required form-control" required>*
                     </div>
                     <div>
-                        <input type="text" name="passport_number" placeholder="Passport (Number)" class="required form-control" required>*
+                        <input type="text" id="passportNumber" name="passport_number" placeholder="Passport (Number)" class="required form-control" required>*
                     </div>
                     <div>
                         <input type="text" name="passport_from" placeholder="Passport (From)" class="required form-control" required>*
                     </div>
                     <div>
-                        <input type="date" name="passport_date" placeholder="Passport (Date)" class="required form-control" required>*
+                        <input type="date" id="passportDate" name="passport_date" placeholder="Passport (Date YYYY-MM-DD)" class="required form-control" required>*
                     </div>
                     <div>
-                        <input type="text" name="id" placeholder="ID" class="required form-control">*
+                        <input type="text" id="privateNumber" name="private_number" placeholder="ID" class="required form-control">*
                     </div>
                     <div>
                         <input type="text" name="place_of_birth" placeholder="Place of Birth" class="required form-control" required>*
@@ -76,24 +77,28 @@
                         </select>
                     </div>
                     <div>
-                        <input type="text" name="" placeholder="Address" class="form-control required" required>*
+                        <input type="text" name="address" placeholder="Address" class="form-control required" required>*
                     </div>
-                    <input type="text" name="" placeholder="Phone number" class="form-control">
-                    <input type="text" name="" placeholder="Phone number (Mobile)" class="form-control">
-                    <input type="text" name="" placeholder="Email" class="form-control">
-                    <input type="text" name="" placeholder="Place of work" class="form-control">
-                    <input type="text" name="" placeholder="Position" class="form-control">
-                    <input type="text" name="" placeholder="Marital status" class=" form-control" >*
+                    <div>
+                        <input type="text" id="homePhone" name="phone_number" placeholder="Phone number (Home)" class="form-control">
+                    </div>
+                    <div>
+                        <input type="text" id="mobilePhone" name="mobile_number" placeholder="Phone number (Mobile)" class="form-control">
+                    </div>
+                    <input type="email" name="email" placeholder="Email" class="form-control">
+                    <input type="text" name="place_of_work" placeholder="Place of work" class="form-control">
+                    <input type="text" name="position" placeholder="Position" class="form-control">
+                    <input type="text" name="marital_status" placeholder="Marital status" class=" form-control" >*
                     <div class="form-group">
                         <label for="nationality-list">Nationality</label>
-                        <select name="" id="nationality-list">
+                        <select name="nationality" id="nationality-list">
                             <option value="">Belarus</option>
                             <option value="">Foreigner</option>
                         </select>
                     </div>
                     <div>
                         <label for="disability-list">Disability</label>
-                        <select name="" id="disability-list">
+                        <select name="disability" id="disability-list">
                             <option value="">No</option>
                             <option value="">I</option>
                             <option value="">II</option>
@@ -106,7 +111,7 @@
                             Pensioner
                         </label>
                     </div>
-                    <input type="text" name="" placeholder="Income" class="form-control">
+                    <input type="text" name="income" placeholder="Income" class="form-control">
                     <div class="form-check">
                         <label class="form-check-label">
                             <input type="checkbox" name="military" class="form-check-input">
@@ -119,9 +124,10 @@
         </div>
         <footer class="row">&copy; Vinogradova Anna, 2016</footer>
     </div>
+    <script src="js/checkUserForm.js"></script>
     <script src="js/registration_form.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="lib/jquery-3.1.0.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script>

@@ -20,8 +20,8 @@ class UserHandler
     {
         $sql = "INSERT INTO ". self::TABLE_NAME ."(first_name, last_name, patronymic, birth, passport_series, 
                 passport_number, passport_from, passport_date, place_of_birth, city_id) VALUES 
-                ('{$user->getFirstName()}','{$user->getLastName()}', '{$user->getPatronymic()}','{
-                $user->getBirth()}','{$user->getPassportSeries()}', {$user->getPassportNumber()},
+                ('{$user->getFirstName()}','{$user->getLastName()}', '{$user->getPatronymic()}',
+                '{$user->getBirth()}','{$user->getPassportSeries()}', {$user->getPassportNumber()},
                 '{$user->getPassportFrom()}', '{$user->getPassportDate()}','{$user->getPlaceOfBirth()}', 
                 {$user->getCity()})";
 
@@ -64,8 +64,8 @@ class UserHandler
     {
         $sql = "SELECT COUNT(*) FROM ". self::TABLE_NAME ." WHERE first_name='{$user->getFirstName()}' AND 
                 last_name='{$user->getLastName()}' AND patronymic='{$user->getPatronymic()}' AND birth='
-                {$user->getBirth()}' AND passport_series='{$user->getPassportSeries()}' AND passport_number='
-                {$user->getPassportNumber()}' AND passport_from='{$user->getPassportFrom()}' AND passport_date='
+                {$user->getBirth()}' AND passport_series='{$user->getPassportSeries()}' AND passport_number=
+                {$user->getPassportNumber()} AND passport_from='{$user->getPassportFrom()}' AND passport_date='
                 {$user->getPassportDate()}' AND place_of_birth='{$user->getPlaceOfBirth()}'";
 
         $result = $this->db_connection->query($sql);
@@ -74,6 +74,15 @@ class UserHandler
             return true;
         }
         return false;
+    }
+
+    public function checkUniqueValues($user)
+    {
+        if(!$this->checkPassportNumber($user->getId(), $user->getPassportNumber())){
+            echo "User with this passport number has already exist";
+            return false;
+        }
+        return true;
     }
 
     public function findAll()
@@ -105,5 +114,21 @@ class UserHandler
         $user->setCity($arrayOfUserData['city_id']);
 
         return $user;
+    }
+
+    private function checkPassportNumber($id, $number)
+    {
+        if($id != null){
+            $sql = "SELECT COUNT(*) FROM ". self::TABLE_NAME ." WHERE id <>'{$id}' AND passport_number={$number}";
+        } else {
+            $sql = "SELECT COUNT(*) FROM ". self::TABLE_NAME ." WHERE passport_number={$number}";
+        }
+
+        $result = $this->db_connection->query($sql);
+        $count = $result->fetch_row();
+        if($count[0] > 0 ){
+            return false;
+        }
+        return true;
     }
 }

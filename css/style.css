@@ -101,14 +101,7 @@ ul.dropdown-menu a:hover {
     margin-left:10px;
 }
 
-.user-list li {
-    display: block;
-    background: #fff;
-    padding: 20px;
-    margin: 5px;
-    font-style: italic;
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
-
-    .user-list li h4 {
-        font-weight: bold;
-    }
