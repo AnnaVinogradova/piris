@@ -21,14 +21,14 @@ class UserHandler
         $sql = "INSERT INTO ". self::TABLE_NAME ."(first_name, last_name, patronymic, birth, passport_series, 
                 passport_number, passport_from, passport_date, place_of_birth, city_id, private_number, address, 
                 phone_number, mobile_phone, email, place_of_work, position, marital_status, disability,
-                pensioner, income, military) VALUES 
+                pensioner, income, military, nationality_id) VALUES 
                 ('{$user->getFirstName()}','{$user->getLastName()}', '{$user->getPatronymic()}',
                 '{$user->getBirth()}','{$user->getPassportSeries()}', {$user->getPassportNumber()},
                 '{$user->getPassportFrom()}', '{$user->getPassportDate()}','{$user->getPlaceOfBirth()}', 
                 {$user->getCity()}, '{$user->getPrivateNumber()}', '{$user->getAddress()}', '{$user->getHomePhone()}',
                 '{$user->getMobilePhone()}', '{$user->getEmail()}', '{$user->getPlaceOfWork()}', '{$user->getPosition()}',
                 '{$user->getMaritalStatus()}', '{$user->getDisability()}', {$user->getPensioner()}, '{$user->getIncome()}',
-                {$user->getMilitary()})";
+                {$user->getMilitary()}, {$user->getNationality()})";
 
         $this->db_connection->query($sql);
     }
@@ -43,8 +43,8 @@ class UserHandler
                 private_number='{$user->getPrivateNumber()}', address='{$user->getAddress()}', phone_number='{$user->getHomePhone()}',
                 mobile_phone='{$user->getMobilePhone()}', email='{$user->getEmail()}', place_of_work='{$user->getPlaceOfWork()}',
                 position='{$user->getPosition()}', marital_status='{$user->getMaritalStatus()}', disability = '{$user->getDisability()}', 
-                pensioner = {$user->getPensioner()}, income='{$user->getIncome()}', military = {$user->getMilitary()}
-                WHERE id={$user->getId()}";
+                pensioner = {$user->getPensioner()}, income='{$user->getIncome()}', military = {$user->getMilitary()},
+                nationality_id={$user->getNationality()} WHERE id={$user->getId()}";
 
         $this->db_connection->query($sql);
     }
@@ -83,7 +83,7 @@ class UserHandler
 
     public function checkUniqueValues($user)
     {
-        $id_valid = true;
+        $is_valid = true;
 
         if(!$this->checkPassportNumber($user->getId(), $user->getPassportNumber())){
             echo "User with this passport number has already exist<br>";
@@ -137,6 +137,7 @@ class UserHandler
         $user->setPensioner($arrayOfUserData['pensioner']);
         $user->setIncome($arrayOfUserData['income']);
         $user->setMilitary($arrayOfUserData['military']);
+        $user->setNationality($arrayOfUserData['nationality_id']);
 
         return $user;
     }

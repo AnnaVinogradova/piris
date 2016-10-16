@@ -60,8 +60,6 @@
                 <div class="form-group">
                     <label for="nationality-list">Nationality</label>
                     <select name="nationality" id="nationality-list">
-                        <option value="">Belarus</option>
-                        <option value="">Foreigner</option>
                     </select>
                 </div>
                 <div>
@@ -99,6 +97,9 @@
         document.user_form.addEventListener('submit', checkForm);
         $.get("list_of_cities.php?id={{ user.city }}", function(data){
             $('#city-list').append(data);
+        });
+        $.get("list_of_nationalities.php?id={{ user.nationality }}", function(data){
+            $('#nationality-list').append(data);
         });
     </script>
 

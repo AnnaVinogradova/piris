@@ -34,6 +34,7 @@ $user->setMilitary($_POST['military']);
 $user->setIncome($_POST['income']);
 $user->setPlaceOfBirth($_POST['place_of_birth']);
 $user->setCity($_POST["city"]);
+$user->setNationality($_POST["nationality"]);
 
 if($user->checkIsValid()){
     $handler = new UserHandler(DatabaseHandler::getConnection());

@@ -23,6 +23,7 @@
                         Pensioner: {% if user.pensioner %}yes {% else %}no{% endif %}<br>
                         Income: {{ user.income }}<br>
                         Military: {% if user.military %}yes {% else %}no{% endif %}<br>
+                        Nationality: {{ user.nationality_name }}<br>
 
                         <a class="btn btn-primary" href="update_form.php?id={{ user.id }}">Edit User</a>
                     </div>

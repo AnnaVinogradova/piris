@@ -35,6 +35,7 @@ $user->setDisability($_POST['disability']);
 $user->setPensioner($_POST['pensioner']);
 $user->setMilitary($_POST['military']);
 $user->setIncome($_POST['income']);
+$user->setNationality($_POST['nationality']);
 
 if($user->checkIsValid()){
     $handler = new UserHandler(DatabaseHandler::getConnection());

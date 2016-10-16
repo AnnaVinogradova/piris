@@ -31,15 +31,42 @@ class User
     private $pensioner;
     private $military;
     private $income;
+    private $nationality;
 
     public function checkIsValid()
     {
-        return true;
+        $isValid = true;
+        if(!$this->checkPasswordNumber() || !$this->checkPrivateNumber() || !$this->checkHomePhone() || !$this->checkMobilePhone()){
+            $isValid = false;
+        }
+        return $isValid;
     }
 
-    private function checkEmail()
+    private function checkPrivateNumber()
     {
+        return preg_match('/^[0-9a-zA-Z]{14}$/', $this->private_number);
+    }
 
+    private function checkPasswordNumber()
+    {
+        return preg_match ('/^[0-9]{7}$/', $this->passport_number);
+    }
+
+    private function checkMobilePhone()
+    {
+        if($this->mobile_phone == ''){
+            return true;
+        }
+        return preg_match('/^\+\d{3}\(\d{2}\)\d{3}-\d{2}-\d{2}$/', $this->mobile_phone);
+    }
+
+    private function checkHomePhone()
+    {
+        if($this->home_phone == ''){
+            return true;
+        }
+
+        return preg_match('/^\d{3}-\d{2}-\d{2}$/', $this->home_phone);
     }
 
     public function getId()
@@ -402,5 +429,21 @@ class User
     public function setPrivateNumber($private_number)
     {
         $this->private_number = $private_number;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNationality()
+    {
+        return $this->nationality;
+    }
+
+    /**
+     * @param mixed $nationality
+     */
+    public function setNationality($nationality)
+    {
+        $this->nationality = $nationality;
     }
 }
