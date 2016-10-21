@@ -36,9 +36,14 @@ class User
     public function checkIsValid()
     {
         $isValid = true;
+        if(!$this->first_name || !$this->last_name || !$this->patronymic || !$this->passport_from || !$this->passport_series){
+            $isValid = false;
+        }
+
         if(!$this->checkPasswordNumber() || !$this->checkPrivateNumber() || !$this->checkHomePhone() || !$this->checkMobilePhone()){
             $isValid = false;
         }
+
         return $isValid;
     }
 

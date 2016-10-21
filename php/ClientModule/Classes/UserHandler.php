@@ -161,9 +161,9 @@ class UserHandler
     private function checkPrivateNumber($id, $number)
     {
         if($id != null){
-            $sql = "SELECT COUNT(*) FROM ". self::TABLE_NAME ." WHERE id <>'{$id}' AND private_number={$number}";
+            $sql = "SELECT COUNT(*) FROM ". self::TABLE_NAME ." WHERE id <>'{$id}' AND private_number='{$number}'";
         } else {
-            $sql = "SELECT COUNT(*) FROM ". self::TABLE_NAME ." WHERE private_number={$number}";
+            $sql = "SELECT COUNT(*) FROM ". self::TABLE_NAME ." WHERE private_number='{$number}'";
         }
 
         $result = $this->db_connection->query($sql);

@@ -56,7 +56,12 @@
                 </div>
                 <input type="text" name="place_of_work" value="{{ user.placeOfWork }}" placeholder="Place of work" class="form-control">
                 <input type="text" name="position" value="{{ user.position }}" placeholder="Position" class="form-control">
-                <input type="text" name="marital_status" value="{{ user.maritalStatus }}" placeholder="Marital status" class=" form-control" >*
+                <label>Marital status</label>
+                <select name="marital_status">
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                    <option value="divorced">Divorced</option>
+                </select>
                 <div class="form-group">
                     <label for="nationality-list">Nationality</label>
                     <select name="nationality" id="nationality-list">
@@ -65,10 +70,10 @@
                 <div>
                     <label for="disability-list">Disability</label>
                     <select name="disability" id="disability-list">
-                        <option value="">No</option>
-                        <option value="">I</option>
-                        <option value="">II</option>
-                        <option value="">III</option>
+                        <option value="no">No</option>
+                        <option value="first">I</option>
+                        <option value="second">II</option>
+                        <option value="third">III</option>
                     </select>
                 </div>
                 <div class="form-check">
